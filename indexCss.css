@@ -1,0 +1,93 @@
+body {
+    background-color: #f9f9f6;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.display-5 {
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.btn-success {
+    background-color: #207744;
+    border-color: #207744;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #1a6036;
+}
+
+.btn-outline-dark {
+    border-color: #222;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn-outline-success {
+    border-color: #207744;
+    color: #207744;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #207744;
+    color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    /* center vertically */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hero.left .content {
+    margin-left: 5vw;
+    text-align: left;
+}
+
+@media (max-width:600px) {
+    .hero {
+        background-position: top;
+    }
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(90px);
+    transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 1.2s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.slow {
+    opacity: 0;
+    transform: translateY(90px);
+   transition: transform 2.0s cubic-bezier(0.25, 1, 0.5, 1) 1.2s, opacity 1.2s ;
+
+}
+
+.slow.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
